@@ -1,6 +1,14 @@
+import { SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Home() {
-  return <Button>Button</Button>;
+  return (
+    <div className="flex flex-col gap-y-4">
+      <div>After Authenticated </div>
+      <div className="">
+        {/* <SignInButton /> */}
+        <UserButton />
+      </div>
+    </div>
+  );
 }
